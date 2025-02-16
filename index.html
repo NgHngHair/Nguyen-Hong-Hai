@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Hồng Hải</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+	 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+  	 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+	html {
+	    scroll-behavior: smooth;
+	}
+        body {
+            background-image: url('imagines/space.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat;
+            height: 100vh;
+            color: #00fff7;
+            font-family: 'Michroma', sans-serif;
+        }
+        header {
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+        }
+	footer {
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+        }
+        nav a:hover { transform: scale(1.1); }
+        h1, h2 { text-shadow: 0 0 10px #ff00c8, 0 0 20px #00fff7;
+		 font-size: 50px;
+		 line-height: 1.5;
+		 font-family: 'Playfair Display', serif;
+	}
+        section { background: rgba(0, 0, 0, 0.85); box-shadow: 0 0 20px #ff00c8; border: 2px solid #00fff7; border-radius: 1rem; }
+	nav { font-size: 25px;
+	      line-height: 0;
+	      padding: 0;
+              font-family: 'Orbitron', sans-serif;
+	}
+        .justify { text-align: justify; }
+        .member-card:hover { transform: scale(1.05); box-shadow: 0 0 30px #ff00c8; }
+        .member-card { border-radius: 1rem; }
+	.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+            text-align: center;
+            padding: 1px 0;
+            transition: all 1s ease;
+	    z-index: 1000;
+        }
+	.header-box {
+            position: absolute;
+	    top: 0px;
+            left: 0px;
+	    right: 0px;
+            height: 110px;
+            overflow: hidden;
+	    text-align: center;
+	}
+	p {
+    	text-indent: 30px;
+	}
+	.indent-br {
+	    display: block;
+	    text-indent: 30px;
+	    margin-top: 10px;
+	}
+   </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="gaming_background.mp4" type="video/mp4">
+    </video>
+    <header class="header-box">
+        <h1 class="font-orbitron animate-pulse"><b>NGUYỄN HỒNG HẢI</b></h1>
+        <nav class="flex justify-center space-x-8 font-bold rounded-xl" id="navbar">
+            <a href="#thongtinchung" class="px-8 py-4 rounded-xl hover:text-yellow-400">Thông tin chung</a>
+            <a href="#tieusu" class="px-8 py-4 rounded-xl hover:text-yellow-400">Tiểu sử</a>
+            <a href="#sumenh" class="px-8 py-4 rounded-xl hover:text-yellow-400">Sứ mệnh</a>
+            <a href="#uocmo" class="px-8 py-4 rounded-xl hover:text-yellow-400">Ước mơ</a>
+            <a href="#thanhvienkhac" class="px-8 py-4 rounded-xl hover:text-yellow-400">Thành viên khác</a>
+        </nav>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let navbar = document.getElementById("navbar");
+                let navbarOffset = navbar.offsetTop;
+                window.addEventListener("scroll", function () {
+                    if (window.pageYOffset > navbarOffset) {
+                        navbar.classList.add("fixed");
+                    } else {
+                        navbar.classList.remove("fixed");
+                    }
+                });
+            });
+        </script>
+    </header>
+    <main class="p-12">
+        <section id="thongtinchung" class="mb-12 p-8 rounded-2xl">
+            <img src="imagines/uh huh.jpg" alt="hai" class="ml-8 float-right w-1/4 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+	    <h3 style="font-size: 30px"><span style="display: block; margin-bottom: 20px;"><b>Thông tin chung</b></span></h3>
+	    <p class="justify"> Nguyễn Hồng Hải là một học sinh lớp 12C5B của Trường THPT Chuyên Hùng Vương, một trong những ngôi trường danh tiếng tại Việt Nam. Cậu sinh sống tại Pleiku, Gia Lai, nơi có khí hậu mát mẻ quanh năm, giúp nuôi dưỡng tâm hồn yêu thích sự tìm tòi và khám phá của mình. Là một chàng trai có vóc dáng cân đối với chiều cao 1m7 và cân nặng 53kg, Hải có dáng người thanh mảnh nhưng vẫn toát lên sự mạnh mẽ, tràn đầy năng lượng của tuổi trẻ.</span>
+<br><span class="indent-br">Một trong những điểm nổi bật nhất của Nguyễn Hồng Hải là khả năng học tập vượt trội, đặc biệt là các môn tự nhiên. Cậu có tư duy logic sắc bén, khả năng tính toán nhanh nhạy và niềm đam mê sâu sắc với toán học, vật lý, và hóa học. Những con số, công thức và thí nghiệm khoa học không chỉ là bài tập trên lớp mà còn trở thành niềm yêu thích giúp cậu phát triển tư duy và khám phá thế giới xung quanh. So với các môn xã hội, điểm số các môn tự nhiên của Hải luôn cao hơn, thể hiện rõ thiên hướng tư duy logic và phân tích của cậu.</span>
+<br><span class="indent-br">Không chỉ giỏi giang trong học tập, Hải còn là một người yêu thích đọc sách. Những trang sách giúp cậu mở rộng thế giới quan, trau dồi kiến thức và khám phá những điều mới mẻ. Cậu không ngừng tìm tòi những lĩnh vực thú vị, từ khoa học, công nghệ đến lịch sử và triết học. Tinh thần ham học hỏi này giúp Hải luôn tự tin trước những thử thách và không ngừng vươn lên trong cuộc sống.</span>
+<br><span class="indent-br">Bên cạnh đó, Nguyễn Hồng Hải còn được nhiều bạn bè quý mến bởi tính cách thân thiện, cởi mở và vẻ ngoài ưa nhìn. Dù sở hữu làn da vàng đặc trưng của người châu Á, nhưng cậu vẫn toát lên phong thái tự tin và cuốn hút. Hải luôn xuất hiện với vẻ ngoài gọn gàng, phong cách trẻ trung, đúng chất của một chàng trai thông minh và đầy triển vọng.</span>
+<br><span class="indent-br">Một điều không thể không nhắc đến chính là sự hài hước và tự tin của Nguyễn Hồng Hải. Cậu không chỉ đẹp trai mà còn có sự thu hút đặc biệt khiến những người xung quanh cảm thấy thoải mái khi trò chuyện. </p>
+	</section>
+        <section id="tieusu" class="mb-12 p-8 rounded-2xl">
+	    <img src="imagines/Mars-Planet-Rotation.gif" alt="mars" class="mr-8 float-left w-1/4 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+	    <h3 style="font-size: 30px"><span style="display: block; margin-bottom: 20px;"><b>Tiểu sử</b></span></h3>
+	    <p class="justify">Nguyễn Hồng Hải, tên thật là @skibidi_sigma male+jyant gyatt##, là một thực thể liên hành tinh đến từ Sao Hỏa, hiện đang sống trên Trái Đất với một sứ mệnh đặc biệt. Sinh ra và lớn lên tại Sao Hỏa, Hải mang trong mình dòng máu lai độc đáo: cha là người Sao Hải Vương, mẹ là người Sao Hỏa. Dù đã 169 tuổi theo hệ quy đổi thời gian của Trái Đất, nhưng với người ngoài hành tinh, cậu vẫn đang ở độ tuổi thanh xuân rực rỡ.</span>
+<br><span class="indent-br"><b>Hành trình từ Sao Hỏa đến Trái Đất</b></span>
+<br><span class="indent-br">Hải đặt chân lên Trái Đất cách đây ba năm, nhưng thực ra, cậu đã quen thuộc với hành tinh xanh này từ trước. Khi còn nhỏ, Hải đã có nhiều dịp tham quan sở thú "Trái Đất" – nơi trưng bày các nền văn minh khác nhau, từ con người đến động vật. Những chuyến tham quan ấy giúp cậu có cái nhìn khác biệt về nhân loại: tò mò, ngưỡng mộ nhưng cũng đầy nghi hoặc.</span>
+<br><span class="indent-br">Không giống với những cư dân Sao Hỏa khác, những người thường chọn cách quan sát từ xa, Hải lại có niềm đam mê mãnh liệt với cuộc sống trên Trái Đất. Chính vì vậy, cậu quyết định đăng ký vào Học viện Diễn viên Liên Hành Tinh MeVSuJMSaN, nơi đào tạo các cá nhân ưu tú có khả năng đóng vai loài người một cách hoàn hảo. Hải hoàn thành xuất sắc ngành Diễn xuất & Sân khấu Điện ảnh, giúp cậu hòa nhập vào Trái Đất một cách tự nhiên nhất.</span>
+<br><span class="indent-br"><b>Thích nghi với xã hội loài người</b></span>
+	    <img src="imagines/hai-on-mars.jpg" alt="hai" class="ml-8 float-right w-1/4 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+<br><span class="indent-br">Dù có kỹ năng diễn xuất hoàn hảo, Hải hiểu rằng chỉ đóng giả là chưa đủ. Nhân loại là một loài sinh vật phức tạp, họ không chỉ giao tiếp bằng ngôn ngữ mà còn bằng cảm xúc, văn hóa và lịch sử. Vì thế, Hải tiếp tục theo học ngành Tâm lý học, nhằm hiểu rõ hơn về tư duy và hành vi con người. Đây là bước quan trọng giúp cậu có thể sống như một người Trái Đất thực thụ, không chỉ bằng vẻ bề ngoài mà còn bằng suy nghĩ.</span>
+<br><span class="indent-br"><b>Cuộc sống hiện tại</b></span>
+<br><span class="indent-br">Dưới danh nghĩa Nguyễn Hồng Hải, cậu đã xây dựng cho mình một cuộc sống bình thường tại Trái Đất. Không ai ngờ rằng đằng sau vẻ ngoài điển trai, cao 1m7, nặng 53kg, với làn da vàng đặc trưng, lại là một thực thể đến từ một hành tinh khác. Hải dành nhiều thời gian để đọc sách, tìm hiểu về những điều mới mẻ và tiếp thu nền văn minh loài người một cách chủ động.</span>
+<br><span class="indent-br">Tuy nhiên, cuộc sống trên Trái Đất cũng không thiếu những thử thách. Hải thường xuyên phải che giấu bản chất thực sự của mình, tránh những câu hỏi về quê hương hay gia đình. Những lúc rảnh rỗi, cậu vẫn bí mật liên lạc với người thân ngoài vũ trụ, cập nhật về tình hình Trái Đất và chờ đợi thời điểm thích hợp để báo cáo lại nhiệm vụ.</span>
+	</section>
+    </main>
+    <footer class="p-6 text-center text-lg font-medium border-t-4">
+        Để biết thêm thông tin vui lòng liên hệ qua SĐT: 911.
+    </footer>
+</body>
