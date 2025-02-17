@@ -31,15 +31,16 @@
         }
         nav a:hover { transform: scale(1.1); }
         h1, h2 { text-shadow: 0 0 10px #ff00c8, 0 0 20px #00fff7;
-		 font-size: 50px;
+		 font-size: 60px;
 		 line-height: 1.5;
-		 font-family: 'Playfair Display', serif;
+		 font-family: 'Playfair+Display', serif;
 	}
         section { background: rgba(0, 0, 0, 0.85); box-shadow: 0 0 20px #ff00c8; border: 2px solid #00fff7; border-radius: 1rem; }
 	nav { font-size: 20px;
 	      line-height: 0;
 	      padding: 0;
               font-family: 'Orbitron', sans-serif;
+	      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 	}
         .justify { text-align: justify; }
         .member-card:hover { transform: scale(1.05); box-shadow: 0 0 30px #ff00c8; }
@@ -61,7 +62,7 @@
 	    top: 0px;
             left: 0px;
 	    right: 0px;
-            height: 110px;
+            height: 120px;
             overflow: hidden;
 	    text-align: center;
 	}
@@ -73,6 +74,34 @@
 	    text-indent: 30px;
 	    margin-top: 10px;
 	}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border: 2px solid #ff66b2;
+        }
+        th {
+            text-align: left;
+        }
+        .bar-container {
+            width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .bar {
+            height: 20px;
+            background-color: #ff4d94;
+            text-align: right;
+            padding-right: 10px;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
    </style>
 </head>
 <body>
@@ -80,13 +109,13 @@
         <source src="gaming_background.mp4" type="video/mp4">
     </video>
     <header class="header-box">
-        <h1 class="font-orbitron animate-pulse"><b>NGUYỄN HỒNG HẢI</b></h1>
+        <h1 class="font-orbitron animate-pulse"><b>Nguyễn Hồng Hải</b></h1>
         <nav class="flex justify-center space-x-6 font-bold rounded-xl" id="navbar">
             <a href="#thongtinchung" class="px-6 py-4 rounded-xl hover:text-yellow-400">Thông tin chung</a>
             <a href="#tieusu" class="px-6 py-4 rounded-xl hover:text-yellow-400">Tiểu sử</a>
             <a href="#sumenh" class="px-6 py-4 rounded-xl hover:text-yellow-400">Sứ mệnh</a>
-            <a href="#uocmo" class="px-6 py-4 rounded-xl hover:text-yellow-400">Ước mơ</a>
-            <a href="#chisosucmanh" class="px-6 py-4 rounded-xl hover:text-yellow-400">Chỉ số sức mạnh</a>
+            <a href="#sothich" class="px-6 py-4 rounded-xl hover:text-yellow-400">Sở thích</a>
+            <a href="#danhgiakhanang" class="px-6 py-4 rounded-xl hover:text-yellow-400">Đánh giá</a>
             <a href="#thanhvienkhac" class="px-6 py-4 rounded-xl hover:text-yellow-400">Thành viên khác</a>
         </nav>
         <script>
@@ -128,26 +157,98 @@
 <br><span class="indent-br">Tuy nhiên, cuộc sống trên Trái Đất cũng không thiếu những thử thách. Hải thường xuyên phải che giấu bản chất thực sự của mình, tránh những câu hỏi về quê hương hay gia đình. Những lúc rảnh rỗi, cậu vẫn bí mật liên lạc với người thân ngoài vũ trụ, cập nhật về tình hình Trái Đất và chờ đợi thời điểm thích hợp để báo cáo lại nhiệm vụ.</span>
 	</section>
 	<section id="sumenh" class="mb-12 p-8 rounded-2xl">
-	    <img src="imagines/jack-j97.jpg" alt="mars" class="mr-8 float-left w-1/4 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+	    <img src="imagines/jack-j97.jpg" alt="j97" class="mr-8 float-left w-1/4 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
 	    <h3 style="font-size: 30px"><span style="display: block; margin-bottom: 20px;"><b>Sứ mệnh</b></span></h3>
 	    <p class="justify">Sứ mệnh của Nguyễn Hồng Hải trên Trái Đất không chỉ là một chuyến thăm khám phá, mà là một phần của một nhiệm vụ vĩ đại và đầy hiểm nguy. Khi Hải đặt chân đến hành tinh này, mục tiêu của cậu không phải là đơn giản như tìm hiểu văn hóa loài người hay chỉ để hòa nhập vào xã hội, mà là để tìm kiếm những nhân tài, những cá nhân xuất sắc đủ khả năng cùng cậu đối mặt với một mối đe dọa khủng khiếp từ một thực thể ngoài hành tinh: loài đom đóm đến từ hành tinh Jack-J97.
 <br><span class="indent-br"><b>Sự đáng sợ của loài đom đóm</b></span>
-	    <img src="imagines/dom-dom.jpg" alt="mars" class="ml-8 float-right w-1/4 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+	    <img src="imagines/dom-dom.jpg" alt="dom-dom" class="ml-8 float-right w-1/4 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
 <br><span class="indent-br">Mục đích của Hải là tuyển chọn một đội ngũ các chiến binh tinh nhuệ, không chỉ là những người giỏi giang về học thuật mà còn có khả năng đứng vững trước sức mạnh và sự tàn bạo của loài đom đóm. Những sinh vật này, vốn có số lượng lên tới hàng triệu tỷ, không chỉ có sức mạnh đáng sợ mà còn sở hữu khả năng giao phối với mọi giống loài chúng gặp phải, từ đó tạo ra sự hỗn loạn và nỗi đau khôn tả cho tất cả các sinh linh bị ảnh hưởng.</span>
 <br><span class="indent-br"><b>Hệ mặt trời VS Jack-J97</b></span>
 <br><span class="indent-br">Cuộc chiến giữa các hành tinh đã diễn ra trong hàng trăm năm, với những nỗ lực không ngừng để chống lại sự bành trướng của loài đom đóm. Hệ Mặt Trời đã chiến đấu quyết liệt, giành giật từng nhịp thở trước khi bị nghiền nát dưới sự tấn công của chúng. Tuy nhiên, những nỗ lực này chỉ giúp giảm được số lượng loài đom đóm từ 5 triệu tỷ xuống còn 3.5 triệu tỷ. Sự giảm thiểu này tuy có hiệu quả nhưng vẫn không đủ để chặn đứng sự lan rộng của loài đom đóm, và vì thế, chiến đấu vẫn tiếp tục.</span>
-	    <img src="imagines/cuoc-chien.jpg" alt="mars" class="mt-8 mr-8 float-left w-1/3 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+	    <img src="imagines/cuoc-chien.jpg" alt="cuoc-chien" class="mt-8 mr-8 float-left w-1/3 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
 <br><span class="indent-br"><b>Nhiệm vụ cao cả</b></span>
 <br><span class="indent-br">Sứ mệnh của Hải và những người được cậu chiêu mộ chính là tiêu diệt hoàn toàn loài đom đóm này, không chỉ bảo vệ Trái Đất mà còn ngăn chặn sự đe dọa sẽ lan rộng ra toàn bộ vũ trụ. Để làm được điều này, Hải cần không chỉ tìm kiếm những chiến binh mà còn phải xây dựng một lực lượng có thể đối phó với những sinh vật có khả năng phục hồi nhanh chóng và khó lường. Sự khác biệt giữa loài đom đóm và những kẻ thù khác chính là khả năng sinh sản và tạo ra thế hệ mới với tốc độ chóng mặt, khiến cho cuộc chiến ngày càng trở nên khó khăn hơn.</span>
 <br><span class="indent-br"><b>Những rào cản</b></span>
 <br><span class="indent-br">Công cuộc tuyển chọn của Hải không hề dễ dàng. Cậu phải tìm những người không chỉ có tài năng, mà còn phải có một sức mạnh tinh thần và ý chí kiên cường. Bởi vì chỉ những người thực sự mạnh mẽ, những người có khả năng vượt qua thử thách và khổ đau mới có thể đứng vững trước sự tàn bạo và sự lừa dối của loài đom đóm.</span>
 <br><span class="indent-br">Ngoài ra, Hải cũng phải đối mặt với thách thức lớn khi những bí mật về loài đom đóm và hành tinh Jack-J97 chưa được tiết lộ đầy đủ. Cậu không thể chỉ dựa vào thông tin từ những người ngoài hành tinh khác mà cần tự mình tìm hiểu và khám phá những điều chưa biết về kẻ thù. Đây chính là lý do tại sao Hải phải tiếp tục học hỏi và tìm kiếm những đồng minh trên Trái Đất, từ những người có thể giúp cậu phát triển các chiến lược, tìm ra điểm yếu của loài đom đóm và thậm chí là nghiên cứu cách thức tiêu diệt chúng hoàn toàn.</span>
 	</section>
-	<section id="uocmo" class="mb-12 p-8 rounded-2xl">
-	    <h3 style="font-size: 30px"><span style="display: block; margin-bottom: 20px;"><b>Ước mơ</b></span></h3>
+	<section id="sothich" class="mb-12 p-8 rounded-2xl">
+            <video loop autoplay muted class="ml-8 float-right w-1/4 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+                <source src="video/cat in space.mp4" type="video/mp4">
+            </video>
+	    <h3 style="font-size: 30px"><span style="display: block; margin-bottom: 20px;"><b>Sở thích</b></span></h3>
+	<p class="justify"><b>- Bài hát yêu thích:</b></p>
+	<ul style="list-style-type:disc">
+	    <li> U II A IO UI A I O CAT x Sigma Boy Song</li>
+	    <li> "Skibidi Toilet" [TikTok Remix | Speed Up] (Lyrics) | Give It To Me x Skibidi Bop Yes Yes Yes Song 10hrs loop</li>
+	    <li> Jesús Mus1c - Chess Type Beat (tiktok rat version, extended)</li>
+	    <li> Tiếng đánh rắm Lo-Fi cực chill giúp bạn thư giãn sau 1 ngày dài</li>
+	    <li> JACK - J97 | THIÊN LÝ ƠI | Official Music Video</li>
+	    <li> KSI - Thick Of It (feat. Trippie Redd) [Official Music Video]</li>
+	</ul>
+	<p><span class="indent-br"></span></p>
+	<hr>
+	    <img src="imagines/mon-hoc.png" alt="mon-hoc" class="mt-8 mr-8 float-left w-1/3 h-64 object-cover rounded-xl mb-4 border-4 border-pink-500">
+	<p class="justify">
+<br><span class="indent-br"></span>
+<b>- Môn học yêu thích:</b></p>
+	<ul style="list-style-type:disc;">
+	    <li> Toán học, Ngữ văn</li>
+	    <li> Tiếng Anh</li>
+	    <li> Vật lý, Địa lý</li>
+	    <li> Hóa học, Tin học</li>
+	    <li> Sinh học</li>
+	    <li> Lịch sử</li>
+	    <li> Thể dục</li>
+	    <li> Hoạt động trải nghiệm, hướng nghiệp</li>
+	    <li> Giáo dục quốc phòng</li>
+	    <li> Giáo dục địa phương</li>
+	</ul>
 	</section>
-	<section id="chisosucmanh" class="mb-12 p-8 rounded-2xl">
-	    <h3 style="font-size: 30px"><span style="display: block; margin-bottom: 20px;"><b>Chỉ số sức mạnh</b></span></h3>
+	<section id="danhgiakhanang" class="mb-12 p-8 rounded-2xl">
+	    <h3 style="font-size: 30px"><span style="display: block; margin-bottom: 20px;"><b>Đánh giá khả năng</b></span></h3>
+    <table>
+        <tr>
+            <td style="width:4%">🚽</td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar" style="width: 45%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:4%">🤫</td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar" style="width: 75%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:4%">🗿</td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar" style="width: 60%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:4%">🐾</td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar" style="width: 100%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:4%">💩</td>
+            <td>
+                <div class="bar-container">
+                    <div class="bar" style="width: 20%;"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
 	</section>
 	<section id="thanhvienkhac" class="mb-12 p-8 rounded-2xl">
 	    <h3 style="font-size: 30px"><span style="display: block; margin-bottom: 20px;"><b>Thành viên khác</b></span></h3>
