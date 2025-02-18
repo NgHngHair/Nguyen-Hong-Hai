@@ -1,0 +1,96 @@
+         @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+	 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+  	 @import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+	html {
+	    scroll-behavior: smooth;
+	}
+        body {
+            background-image: url('imagines/space.jpg');
+            background-size: 2600px;
+            background-position: center;
+            background-repeat: repeat;
+            height: 100vh;
+            color: #00fff7;
+            font-family: 'Michroma', sans-serif;
+        }
+        header {
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+        }
+	footer {
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+        }
+        nav a:hover { transform: scale(1.1); }
+        h1, h2 { text-shadow: 0 0 10px #ff00c8, 0 0 20px #00fff7;
+		 font-size: 60px;
+		 line-height: 1.5;
+		 font-family: 'Baskervville', serif;
+	}
+        section { background: rgba(0, 0, 0, 0.85); box-shadow: 0 0 20px #ff00c8; border: 2px solid #00fff7; border-radius: 1rem; }
+	nav { font-size: 20px;
+	      line-height: 0;
+	      padding: 0;
+              font-family: 'Orbitron', sans-serif;
+	      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	}
+        .justify { text-align: justify; }
+        .member-card:hover { transform: scale(1.05); box-shadow: 0 0 30px #ff00c8; }
+        .member-card { border-radius: 1rem; }
+	.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #ff00c8, #00fff7);
+            box-shadow: 0 0 20px #00fff7;
+            text-align: center;
+            padding: 1px 0;
+            transition: all 1s ease;
+	    z-index: 1000;
+        }
+	.header-box {
+            position: absolute;
+	    top: 0px;
+            left: 0px;
+	    right: 0px;
+            height: 120px;
+            overflow: hidden;
+	    text-align: center;
+	}
+	p {
+    	text-indent: 30px;
+	}
+	.indent-br {
+	    display: block;
+	    text-indent: 30px;
+	    margin-top: 10px;
+	}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border: 2px solid #ff66b2;
+        }
+        th {
+            text-align: left;
+        }
+        .bar-container {
+            width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .bar {
+            height: 20px;
+            background-color: #ff4d94;
+            text-align: right;
+            padding-right: 10px;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
